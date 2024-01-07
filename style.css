@@ -1,0 +1,83 @@
+nav .avbar {
+  z-index: 1;
+  transition: 0.5s;
+}
+.jumbotron .row-img {
+  width: 100%;
+  height: 100vh;
+  background-image: url('images/bg2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.jumbotron .row-img::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.about .row-img {
+  width: 100%;
+}
+
+.about .row-img .md5:nth-child(1) {
+  background-color: #272626;
+  width: 50%;
+  height: 100vh;
+}
+
+.about .row-img .md5:nth-child(2) {
+  background-image: url(images/logo.jpg);
+  width: 50%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.pricing {
+  height: 700px;
+  background-color: #000;
+}
+
+.pricing img {
+  width: 35%;
+  margin: 33%;
+  margin-top: 5%;
+  display: block;
+}
+
+.testimonial {
+  background-color: #272626;
+}
+
+.testimonial img {
+  width: 25%;
+  margin-bottom: 3px;
+  position: relative;
+}
+
+.contact {
+  background-color: #151515;
+}
+
+footer {
+  background-color: #201f1f;
+}
+
+/* Small devices (landscape phones, less than 768px */
+@media (max-width: 767.98px) {
+  .about .row-img {
+    flex-direction: column;
+  }
+
+  .about .row-img .md5 {
+    width: 100% !important;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
